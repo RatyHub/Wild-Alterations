@@ -1,8 +1,9 @@
-# Wild Alterations
+# Wild Alterations PSDK
 
 ## Français
 
 Wild Alterations est un plugin PSDK qui permet de rendre les rencontres sauvages plus variées en donnant une chance aux Pokémon sauvages de commencer le combat avec une altération de statut ou avec des PV déjà manquants.
+Ce plugin est un portage partiel, avec l'accord de l'auteur, du plugin Essentials [Lifemon](https://eeveeexpo.com/resources/1846/).
 
 ### Fonctionnalités
 
@@ -178,6 +179,7 @@ JSON ne permet pas d'écrire directement des symboles Ruby non quotés comme `:m
 ## English
 
 Wild Alterations is a PSDK plugin that makes wild encounters more varied by giving wild Pokémon a chance to start battle with a status condition or with some HP already missing.
+This plugin is a partial port, with the author's permission, of the Essentials plugin [Lifemon](https://eeveeexpo.com/resources/1846/).
 
 ### Features
 
