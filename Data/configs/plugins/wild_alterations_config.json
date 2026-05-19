@@ -1,0 +1,46 @@
+{
+  "enabled": true,
+  "logs": false,
+  "alterationChance": 15,
+  "alterationTypes": [
+    {
+      "name": "status",
+      "weight": 20
+    },
+    {
+      "name": "hp",
+      "weight": 80
+    }
+  ],
+  "status": [
+    {
+      "name": "poison",
+      "weight": 40
+    },
+    {
+      "name": "paralysis",
+      "weight": 40
+    },
+    {
+      "name": "sleep",
+      "weight": 20
+    }
+  ],
+  "hp": {
+    "lossPercentRange": [
+      5,
+      10
+    ]
+  },
+  "applyTo": {
+    "forcedBattles": false,
+    "boss": false,
+    "roaming": false,
+    "fishing": true,
+    "safari": true
+  },
+  "exclude": {
+    "species": [],
+    "maps": []
+  }
+}

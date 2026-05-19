@@ -1,0 +1,9 @@
+--- !ruby/object:PluginManager::Config
+name: wild_alterations
+authors:
+- Raty
+version: 1.0.0.0
+deps: []
+retry_psdk_compatibility_after_plugin_load: false
+added_files:
+- Data/configs/plugins/wild_alterations_config.json
