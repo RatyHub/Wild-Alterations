@@ -16,6 +16,8 @@ module Configs
 
   module Project
     class WildAlterations
+      FILENAME = File.join('plugins', 'wild_alterations_config')
+
       class WeightedEntry
         attr_reader :name
         attr_reader :weight
@@ -199,7 +201,7 @@ module Configs
 
   # @!method self.wild_alterations
   # @return [Configs::Project::WildAlterations]
-  register(:wild_alterations, File.join('plugins', 'wild_alterations_config'), :json, false, Project::WildAlterations)
+  register(:wild_alterations, Project::WildAlterations::FILENAME, :json, true, Project::WildAlterations)
 end
 
 module WildAlterations
@@ -207,6 +209,19 @@ module WildAlterations
 
   def config
     Configs.wild_alterations
+  end
+
+  def reload_config
+    unless PSDK_CONFIG.release?
+      Configs.register(
+        :wild_alterations,
+        Configs::Project::WildAlterations::FILENAME,
+        :json,
+        true,
+        Configs::Project::WildAlterations
+      )
+    end
+    return true
   end
 
   def enabled?
